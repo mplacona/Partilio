@@ -1,0 +1,14 @@
+{
+    "eventName": "ipmessaging",
+    "url": "https://ip-messaging.twilio.com/v1/Services/{twilio_service_sid}/Channels/{twilio_channel}/Messages",
+    "requestType": "POST",
+    "auth": {
+        "username": "particle_username",
+        "password": "particle_password"
+    },
+    "form": {
+        "From" : "particle",
+        "Body" : "{{SPARK_EVENT_VALUE}}"
+    },
+    "mydevices": true
+}
